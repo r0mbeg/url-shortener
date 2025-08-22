@@ -23,6 +23,8 @@ func main() {
 		os.Exit(1)
 	}
 
+	urlName, _ := storage.GetURL("google")
+	log.Debug("found ", slog.String("url", urlName))
 	// TODO: init router: chi, "chi render"
 
 	// TODO: run server: run server
