@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func NewRandowString(length int) string {
+func NewRandomString(length int) string {
 
 	src := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(src)
