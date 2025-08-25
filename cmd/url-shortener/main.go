@@ -39,7 +39,7 @@ const (
 func setupLogger(env string) *slog.Logger {
 	var log *slog.Logger
 	switch env {
-	case envLocal:
+	case envLocal: 
 		opts := &slog.HandlerOptions{Level: slog.LevelDebug}
 		log = slog.New(
 			opts.NewTextHandler(os.Stdout),
